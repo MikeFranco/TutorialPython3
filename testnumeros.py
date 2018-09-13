@@ -16,10 +16,10 @@ el complejo se hace asi:"""
 z= 3j
 x= 1 #interger
 y= 4.2 #float
-print(z)
+print(type(z))
 
 #se pueden usar exponentes en python poniendo la E para indicar 10^
-a = -87.7e10
+a = -87.7e-10
 print(a)
 #transformar el valor dentro de () en el tipo que se le indique antes
 x = str(1.55555)
