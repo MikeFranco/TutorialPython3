@@ -1,8 +1,10 @@
 """los comentarios se rompen
 si les pongo acento, hay que evitar esto"""
-#esto se rompe los acentos valen verga aqui
+#Tambien se rompen si aqui les pongo acento, ni modo, a escirbir con faltas de ortgrafia
+
 x=6
 y=9
+
 if x>y:
   print("esto no es cierto")
 else:
@@ -11,12 +13,12 @@ else:
 print("esto vale x: ",  x)
 print("esto vale y:",  y)
 
-"""tipos de numeros en python:    interger, float y complejos
+"""tipos de numeros en python:   interger, float y complejos
 el complejo se hace asi:"""
-z= 3j
+z= 3j#este es el numero complejo
 x= 1 #interger
 y= 4.2 #float
-print(type(z))
+print(type(z))#imprime que tipo de variable es
 
 #se pueden usar exponentes en python poniendo la E para indicar 10^
 a = -87.7e-10
