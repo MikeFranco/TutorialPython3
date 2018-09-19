@@ -1,12 +1,9 @@
-"""                     Arreglos
-Hay 4 tipos de arreglos en Python:
-  -Listas: es un arreglo que es ordenado y mutable. Permite duplicar a los miembros del arreglo
-  -Tuple: es un arreglo ordenado y NO mutable. Permite duplicar a los miembros del arreglo
-  -Set: es un arreglo NO ordenado y NO indexado. NO permite duplicar a los miembros del arreglo
-  -Diccionario: arreglo NO ordenado, cambiable y NO indexado, NO se pueden duplicar los miembros
-"""
 
-"""Arreglos de Lista"""
+
+"""Arreglos de Lista
+Son arreglos ordenados y mutables. Permiten duplicar a los miembros del arreglo
+Este tipo de arreglos se declaran entre corchetes []
+"""
 
 estalista = ["manzana", "computadora", "pera"]
 print(estalista)#imprime toda la lista
@@ -27,6 +24,7 @@ estalista.remove("manzana")#elimina el valor indicado
 estalista.pop()#si no se especifica, se elimina el ultimo valor del arreglo
 print(estalista)
 del estalista[0] #borra el lugar especificado
+
 #del estalista #borra la lista completa
 print(estalista)#se marcaria como error ya que la lista se borro en la linea anterior, si se descomenta
 estalista.clear()#limpia la lista, pero sigue existiendo
