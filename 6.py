@@ -64,9 +64,11 @@ print(esteset2)
 
 
 
-
+#Estos sets son los que ocupare para los metodos
 set1 = {"computadora", "focos", "lamparas", "extensiones"} 
 set2 = {"computadora", "escritorio", "plumas", "extensiones"}
+
+
 
 """                 Otros metodos que puedes ocupar con set         
 
@@ -87,4 +89,100 @@ print(b)
 #Como te puedes dar cuenta, se imprimen 2 cosas diferentes, ya que estas comparando primero el set1 con set2
 #y luego se compara el set2 con el set1 y cada uno tiene objetos diferentes
 
+
+
+"""                             Difference_update
+El metodo quita los elementos que esten repetidos en ambos sets, difference_update y difference son diferentes.
+El metodo Difference regresa un nuevo set,  sin los items no buscados,
+y difference_update() remueve los items no buscados del set original
+"""
+#En este caso, no debes de agregar una variable ya que se sustituye en la original
+#set2.difference_update(set1)
+print(set2)
+
+
+"""                             Intersection
+El metodo interseccion regresa un set que contiene los items similares entre 2 o mas sets.
+Parametros:
+Obligatorio: crear una variable que almacene el set resultante de la interseccion
+Obligatorio: el set que se va a comparar
+Opcional: para comparar mas de un set, simplemente separas el nombre de cada uno con un a coma ","
+"""
+result = set1.intersection(set2)
+print(result)
+
+"""                             Intersection_update
+El metodo intersection_update remueve los items que no estan presentes en ambos sets
+(o en todos los sets si la comparacion se hace entre mas de 2 sets)
+Al igual que difference_update(), la interseccion se sobreescribira sobre el set que estes comparando
+"""
+#set1.intersection_update(set2)
+#print(set1)
+
+"""                                   IsDisJoint
+El metodo isdisjoint() regresa True si ninguno de los items esta presente en ambos sets
+regresa False en caso contrario
+Parametros:
+Obligatorio: debes de crear una variable para almacenar la respuesta del metodo
+"""
+set3= {"a","ver", "al", "cine"}
+z = set1.isdisjoint(set3)
+#print(z)
+
+
+"""                                     IsSubSet
+El metodo issubset regresa True si todos los items en el ser existen en el otro set especificado,
+Regresa False en caso contrario
+Es importante remarcar que primero pones el set que creas que es subconjunto (por llamarlo de alguna forma)
+y despues pones al set universo
+"""
+set4 = {"computadora"}
+d = set4.issubset(set1)
+#print(d)
+
+
+"""                                         IsSuperSer
+El metodo issuperset() regresa True si todos los items del set especificado existen en el original
+Este metodo es el contrario a IsSubSet, primero declaras el universo y luego el set que tiene al menos
+un elemento del universo
+"""
+z = set1.issuperset(set4)
+#print(z) 
+
+
+"""                                     Symmetric_Difference
+Este metodo symmetric_difference() regresa un ser que contiene a todos los elementos de ambos sets,
+pero no lo elementos presentes en ambos, esto quiere decir que
+se crea un set con los elementos que tengan diferentes de los que se esten comparando.
+"""
+#recuerda que no se imprimiran en un orden ya que los sets son no indexados
+sym = set1.symmetric_difference(set2)
+print(sym)
+
+"""                                     Symmetric_Difference_Update
+Este metodo symmetric_difference_update() actualiza al set original quitando los elementos
+que esten en ambos sets e insertando los que falten
+recuerda que en todos los metodos que tengan update, actualiza al set que usas primero,
+no debes de crear una variable para almacenar los datos...
+"""
+#set1.symmetric_difference_update(set2)
+#print(set1)
+
+
+"""                                        Union
+El metodo union() regresa un set que contiene a todos los items del original y todos los items de los sets especificados
+puedes especificar los sets que tu quieras, solo separalos por comas ","
+Si el item aparece en mas de 1 set, se reemplazara y solo aparecera 1 sola vez en el nuevo set
+"""
+
+uni = set1.union(set2, set3, set4)
+print(uni)
+
+
+"""                                     Update
+update() actualiza el set actual, agregandole items de otro set
+Si un item esta presente en ambos, solo aparecera una vez
+"""
+set1.update(set2)
+print(set1)
 
