@@ -28,6 +28,7 @@ Los archivos los pongo enumerados para que puedas llevar un orden y saber qué o
 6. Arreglos tipo "Set"
 7. Arreglos tipo "Diccionario"
 
+8. Sentencia if
 
 
 

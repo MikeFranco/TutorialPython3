@@ -58,6 +58,57 @@ print(dicci)
 
 
 """Puedes remover alguna llave con el metodo del"""
-print("------------------Borrando una llave-------------------------")
+print("------------------Borrando la llave Genero-------------------------")
 del dicci["Genero"]
 print(dicci)
+"""Tambien puedes borrar el diccionario con este metodo..."""
+#del dicci
+
+"""Con el metodo pop() tambien puedes borrar llaves"""
+print("--------Borrando item con el metodo pop() Personaje Principal-------")
+dicci.pop("Personaje Principal")
+print(dicci)
+
+
+"""con popitem() se borra el ultimo item ingresado 
+(en versiones 3.7 en adelante se borra un item al azar)"""
+print("----------------borrando con popitem()------------------------")
+x = dicci.popitem()
+print("Esto es lo que se borra: ",x)
+print(dicci)
+
+
+"""Con el metodo clear() puedes limpiar todo el diccionario"""
+print("-------------limpiando el diccionario--------------------------")
+dicci.clear()
+print(dicci)
+
+"""Con el constructor dict() tambien puedes hacer un diccionario"""
+print("-------------Creando el diccionario con dict()-----------------")
+dicci = dict(Pelicula = "Star Wars VI", Genero = "Sci-Fi", Año = "1983")
+for i,j in dicci.items():
+  print(i,":", j)  
+
+
+"""Metodos que puedes usar en tu diccionario
+clear()	copy()	fromkeys()	get()	items()	keys()	pop()	popitem()	setdefault() update()  values()
+
+"""
+eje = {
+  "Marca" :"Chevrolet",
+  "Modelo":"Corvette",
+  "Año"   : 1954
+}
+
+"""Metodo fromkeys()
+Puedes crear llaves a partir de una variable
+Hay que destacar que si usas una segunda variable para agregar valores (en este caso y),
+se agregaran a todas las llaves que tu ingreses
+"""
+print("----------------Agregando llaves con fromkeys()---------------")
+x = ("llave1", "llave2", "llave3")
+y = ("valor1")
+eje2 = dict.fromkeys(x,y)
+print(eje2)
+
+
